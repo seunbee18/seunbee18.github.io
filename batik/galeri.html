@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Batik Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+ <!-- Navbar -->
+<nav class="bg-white shadow-md fixed w-full z-50">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <!-- Logo -->
+    <h1 class="text-2xl font-bold text-yellow-700">Batik Indonesia</h1>
+
+    <!-- Menu (desktop) -->
+    <ul class="hidden md:flex space-x-6 text-lg">
+      <li><a href="index.html" class="text-gray-800 hover:text-yellow-600">Home</a></li>
+      <li><a href="tentang.html" class="text-gray-800 hover:text-yellow-600">Tentang</a></li>
+      <li><a href="sejarah.html" class="text-gray-800 hover:text-yellow-600">Sejarah</a></li>
+      <li><a href="galeri.html" class="text-gray-800 hover:text-yellow-600">Galeri</a></li>
+      <li><a href="kontak.html" class="text-gray-800 hover:text-yellow-600">SMK 5</a></li>
+    </ul>
+
+    <!-- Tombol hamburger (mobile) -->
+    <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+      ☰
+    </button>
+  </div>
+
+  <!-- Menu (mobile) -->
+  <div id="menu" class="hidden md:hidden bg-white shadow-md">
+    <ul class="flex flex-col space-y-4 p-6 text-lg">
+      <li><a href="index.html" class="text-gray-800 hover:text-yellow-600">Home</a></li>
+      <li><a href="tentang.html" class="text-gray-800 hover:text-yellow-600">Tentang</a></li>
+      <li><a href="sejarah.html" class="text-gray-800 hover:text-yellow-600">Sejarah</a></li>
+      <li><a href="galeri.html" class="text-gray-800 hover:text-yellow-600">Galeri</a></li>
+      <li><a href="kontak.html" class="text-gray-800 hover:text-yellow-600">SMK 5</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  <!-- Highlight Koleksi -->
+  <section class="container mx-auto py-24 px-6">
+    <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Koleksi Batik Pilihan</h2>
+
+    <!-- Grid (responsif) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Model 1 -->
+      <div class="shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition">
+        <a href="produk.html">
+          <img src="Batik-Mega-Mendung.webp" class="w-full h-64 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-yellow-700">Batik Mega Mendung</h3>
+            <p class="text-gray-600 text-sm mt-2">Melambangkan kekuatan, keberanian, serta keselamatan dari bencana alam.</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Model 2 -->
+      <div class="shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition">
+        <a href="produk.html">
+          <img src="Batik-Sekar-Jagad.jpg" class="w-full h-64 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-yellow-700">Batik Jagad</h3>
+            <p class="text-gray-600 text-sm mt-2">Menggambarkan keindahan alam dan kehidupan di jagad ini, penuh keseimbangan dan kedamaian.</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Model 3 -->
+      <div class="shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition">
+        <a href="produk.html">
+          <img src="Batik-Tambal.jpg" class="w-full h-64 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-yellow-700">Batik Tambal</h3>
+            <p class="text-gray-600 text-sm mt-2">Melambangkan keragaman dan kebersamaan dalam kehidupan masyarakat.</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Model 4 -->
+      <div class="shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition">
+        <a href="produk.html">
+          <img src="filosofi_batik_kawung.jpg" class="w-full h-64 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-yellow-700">Batik Kawung</h3>
+            <p class="text-gray-600 text-sm mt-2">Melambangkan kekuasaan, kesucian, serta keseimbangan dalam hidup.</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Model 5 -->
+      <div class="shadow-lg rounded-2xl overflow-hidden hover:scale-105 transition">
+        <a href="produk.html">
+          <img src="Batik-lereng.jpg" class="w-full h-64 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold text-yellow-700">Batik Lereng</h3>
+            <p class="text-gray-600 text-sm mt-2">Menggambarkan kemegahan dan keanggunan, terinspirasi oleh alam seperti gunung dan sungai.</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8 mt-12">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Pameran Batik Indonesia. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Script toggle mobile menu -->
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>

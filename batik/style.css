@@ -1,0 +1,5 @@
+/* Supaya slider cukup lebar menampung semua slide */
+.slider {
+  width: 400%; /* 4 slide, kalau 5 gambar → 500% */
+}
+
